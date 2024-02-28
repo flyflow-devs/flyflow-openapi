@@ -1,17 +1,13 @@
 openapi: 3.0.0
 info:
-  title: OpenAI API
-  description: The OpenAI REST API. Please see https://platform.openai.com/docs/api-reference for more details.
+  title: Flyflow.dev API
+  description: The Flyflow REST API.
   version: "2.0.0"
-  termsOfService: https://openai.com/policies/terms-of-use
-  contact:
-    name: OpenAI Support
-    url: https://help.openai.com/
   license:
     name: MIT
     url: https://github.com/openai/openai-openapi/blob/master/LICENSE
 servers:
-  - url: https://api.openai.com/v1
+  - url: https://api.flyflow.dev/v1
 tags:
   - name: Assistants
     description: Build Assistants that can call models and use tools.
@@ -23,16 +19,6 @@ tags:
     description: Given a prompt, the model will return one or more predicted completions, and can also return the probabilities of alternative tokens at each position.
   - name: Embeddings
     description: Get a vector representation of a given input that can be easily consumed by machine learning models and algorithms.
-  - name: Fine-tuning
-    description: Manage fine-tuning jobs to tailor a model to your specific training data.
-  - name: Files
-    description: Files are used to upload documents that can be used with features like Assistants and Fine-tuning.
-  - name: Images
-    description: Given a prompt and/or an input image, the model will generate a new image.
-  - name: Models
-    description: List and describe the various models available in the API.
-  - name: Moderations
-    description: Given a input text, outputs if the model classifies it as violating OpenAI's content policy.
 paths:
   # Note: When adding an endpoint, make sure you also add it in the `groups` section, in the end of this file,
   # under the appropriate group
